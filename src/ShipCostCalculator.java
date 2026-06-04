@@ -6,11 +6,11 @@ void main() {
         String badInput = "";
 
     System.out.println("Enter the cost of your item: ");
-    Scanner scanner = new Scanner(System.in);
-    if (scanner.hasNextDouble()){
-        itemPrice = scanner.nextDouble();
+    Scanner in = new Scanner(System.in);
+    if (in.hasNextDouble()){
+        itemPrice = in.nextDouble();
 
-        scanner.close();
+        in.close();
 
         if (itemPrice >= 100.00){
             totalCost = itemPrice;
@@ -23,7 +23,7 @@ void main() {
         //scanner.nextLine();
     } else {
         System.out.println("Please enter a valid number.");
-        badInput = scanner.nextLine();
+        badInput = in.nextLine();
     }
 
 
