@@ -18,8 +18,8 @@ void main() {
             shippingCost = shippingRate * itemPrice;
             totalCost = shippingCost + itemPrice;
         }
-        System.out.println("The shipping cost is: " + shippingCost);
-        System.out.println("The total price is: " + totalCost);
+        System.out.println("The shipping cost is: $" + shippingCost);
+        System.out.println("The total price is: $" + totalCost);
         //scanner.nextLine();
     } else {
         System.out.println("Please enter a valid number.");
